@@ -10,35 +10,7 @@ console.log('STONE WALL');
 
 function solution(A) {
 
-    if (A.length < 1) return 0;
-    if (A.length === 1) return 1;
-
-    let i = 0;
-    let len = A.length;
-    let min = A[0];
-    let gap = 0;
-    let blocks = 1;
-    while (i < len) {
-        if (A[i] < min) {
-            min = A[i];
-            blocks++;
-        } else if (A[i] > min) {
-            if (gap === 0) {
-                gap = i;
-            }
-        }
-        i++;
-        
-        if ((i === len) && (gap > 0) && (gap <= len)) {
-            i = gap;
-            gap = 0;
-            min = A[i];
-        }
-
-        console.log('blocks', blocks, 'gap', gap, '=', A[gap]);
-    }    
-    console.log('blocks', blocks)
-    return blocks;
+    return null;
 }
 
 // test([1]);
